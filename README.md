@@ -1,7 +1,7 @@
 # Tesla-Car-Sales
 https://www.tesla.com/
 
-1. $Trang chủ$
+1. $Trang chủ$ (Minh)
 
 1.1. Thành phần 
 - Tổng cộng có 3 xe: $Model S$, $Model X$, $Model Y$
@@ -26,7 +26,7 @@ https://www.tesla.com/
   . Nhập từ khóa vào thì các Tên xe phù hợp nhất sẽ hiện ra ngay dưới theo dạng dropdown
   . Ấn vào các kết quả gợi ý đấy thì direct sang $Chi tiết sản phẩm$
 
-2. $Chi tiết sản phẩm$
+2. $Chi tiết sản phẩm$ (Trường)
 
 2.1. Thành phần
 - Menu: $Logo$, Tên các xe, $Sign in$, $Thanh tìm kiếm$
@@ -49,7 +49,7 @@ https://www.tesla.com/
   . Nhập từ khóa vào thì các Tên xe phù hợp nhất sẽ hiện ra ngay dưới theo dạng dropdown
   . Ấn vào các kết quả gợi ý đấy thì direct sang $Chi tiết sản phẩm$
  
-3. $Đặt hàng$
+3. $Đặt hàng$ (Công)
 
 3.1. Thành phần
 - 3 trang $Đặt hàng$ cho 3 xe
@@ -63,7 +63,7 @@ https://www.tesla.com/
 - Tất cả đều copy y hệt như website gốc
 - Sau khi ấn nút $Place Order$ thì sẽ hiện một thông báo là thực hiện thanh toán thành công và thông tin giao dịch đã được gửi đến mail của khách
 
-4. $Sign in$
+4. $Sign in$ (Trường)
 
 4.1. Flow
 - Ấn vào $Custom Order$ ở trang chủ thì sau khi đăng nhập xong sẽ direct sang trang $Đặt hàng$ của xe đó luôn
