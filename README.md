@@ -1,7 +1,7 @@
 # Tesla-Car-Sales
 https://www.tesla.com/
 
-1. %Trang chủ%
+1. $Trang chủ$
 
 1.1. Thành phần 
 - Tổng cộng có 3 xe: $Model S$, $Model X$, $Model Y$
@@ -66,6 +66,7 @@ https://www.tesla.com/
 4. $Sign in$
 
 4.1. Flow
+
 - Tương tác từ những trang khác:  
   . Ấn vào $Custom Order$ ở trang chủ thì sau khi đăng nhập xong sẽ direct sang trang $Đặt hàng$ của xe đó luôn
   . Ấn vào $Sign in$ từ trang chủ thì sau khi đăng nhập thì sẽ direct lại trang chủ với tên đăng nhập hiển thị
