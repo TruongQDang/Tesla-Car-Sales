@@ -66,12 +66,10 @@ https://www.tesla.com/
 4. $Sign in$
 
 4.1. Flow
-
-- Tương tác từ những trang khác:  
-  . Ấn vào $Custom Order$ ở trang chủ thì sau khi đăng nhập xong sẽ direct sang trang $Đặt hàng$ của xe đó luôn
-  . Ấn vào $Sign in$ từ trang chủ thì sau khi đăng nhập thì sẽ direct lại trang chủ với tên đăng nhập hiển thị
-  . Ấn vào $Order Now$ ở trang Chi tiết sản phẩm thì sau khi đăng nhập xong thì sẽ direct sang trang $Đặt hàng$ của xe đó
-  . Ấn vào $Sign in$ từ trang Chi tiết sản phẩm thì sau khi đăng nhập thì sẽ direct lại trang chủ với tên đăng nhập hiển thị
+- Ấn vào $Custom Order$ ở trang chủ thì sau khi đăng nhập xong sẽ direct sang trang $Đặt hàng$ của xe đó luôn
+- Ấn vào $Sign in$ từ trang chủ thì sau khi đăng nhập thì sẽ direct lại trang chủ với tên đăng nhập hiển thị
+- Ấn vào $Order Now$ ở trang Chi tiết sản phẩm thì sau khi đăng nhập xong thì sẽ direct sang trang $Đặt hàng$ của xe đó
+- Ấn vào $Sign in$ từ trang Chi tiết sản phẩm thì sau khi đăng nhập thì sẽ direct lại trang chủ với tên đăng nhập hiển thị
  
 
 
