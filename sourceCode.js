@@ -1,6 +1,6 @@
-//signIn.html
-let allUserAcc = [];
+let blank = true;
 
+//signIn.html
 function saveUserAcc() {
 }
 
@@ -16,10 +16,9 @@ function createAcc() {
     oneUserAcc["email"] = document.getElementById("email_createAcc").value;
     oneUserAcc["password"] = document.getElementById("password_createAcc").value;
     allUserAcc.push(oneUserAcc);
-    console.log(allUserAcc);
+    sessionStorage["allUserAcc"] = JSON.stringify(allUserAcc);
+    console.log(sessionStorage["allUserAcc"])
     window.location.href = "signIn.html";
 }
-
-localStorage["allUserAcc"] = JSON.stringify(allUserAcc);
-allUserAcc = JSON.parse(localStorage.allUserAcc)
+console.log("Session storage: " + sessionStorage["allUserAcc"])
 console.log(allUserAcc)
