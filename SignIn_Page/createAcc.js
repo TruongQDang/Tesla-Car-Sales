@@ -36,3 +36,4 @@ function createAcc() {
         }
     }
 }
+console.log(allUserAcc)

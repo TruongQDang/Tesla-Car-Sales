@@ -35,3 +35,4 @@ function checkUserAcc() {
 function directCreateAcc() {
     window.location.href = "createAcc.html";
 }
+console.log(allUserAcc)
