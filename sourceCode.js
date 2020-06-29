@@ -1,4 +1,10 @@
-let blank = true;
+/////MASTER: SIGN IN PAGE
+//
+if (sessionStorage["allUserAcc"] == "") {
+    var allUserAcc = []
+} else {
+    var allUserAcc = JSON.parse(sessionStorage["allUserAcc"]);    
+}
 
 //signIn.html
 function saveUserAcc() {
@@ -21,4 +27,4 @@ function createAcc() {
     window.location.href = "signIn.html";
 }
 console.log("Session storage: " + sessionStorage["allUserAcc"])
-console.log(allUserAcc)
+console.log( allUserAcc)
