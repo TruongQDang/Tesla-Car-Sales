@@ -1,0 +1,30 @@
+li {
+    list-style-type: none;
+}
+
+.text {
+    color: white;
+    font-weight: bold;
+}
+
+.img-logo {
+    width: 100px;
+    height: 11px;
+}
+
+.container-fluid, .row{
+    height: 52px;
+}
+
+.nav-link {
+    padding-top: 0px;
+}
+
+.menubar-center {
+    padding-top: 12px;
+}
+
+.nav-link:hover {
+    color: white;
+    text-decoration: none;
+}
