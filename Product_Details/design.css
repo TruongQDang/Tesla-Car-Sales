@@ -1,3 +1,10 @@
+body {
+    background-image: url(../Materials/model-s@2x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -5px -95px;
+}
+
 li {
     list-style-type: none;
 }
