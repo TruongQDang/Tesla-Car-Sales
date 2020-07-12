@@ -1,8 +1,8 @@
-body {
+#section1 {
     background-image: url(../Materials/model-s@2x.jpg);
-    background-size: cover;
     background-repeat: no-repeat;
-    background-position: -5px -95px;
+    background-size: cover;
+    background-position: 0px -90px;
 }
 
 li {
@@ -35,3 +35,130 @@ li {
     color: white;
     text-decoration: none;
 }
+
+@keyframes needle {
+    0% {transform: rotate(-180deg);}
+    100% {transform: rotate(0deg);}
+}
+
+.speedometer {
+    left: 200px;
+    top: 7px;
+}
+
+.speedometer-needle {
+    width: 20px;
+    z-index: 3;
+    position: absolute;
+    animation-name: needle;
+    animation-duration: 2s;
+    top: 24px;
+    left: 38px;
+    transform-origin: 0% 50%;
+}
+
+.speedometer-outer {
+    position: absolute;
+    z-index: 1;
+    width: 48px;
+    top: 5px;
+}
+
+.speedometer-inner {
+    position: absolute;
+    z-index: 2;
+    width: 35px;
+    top: 11px;
+    left: 21px;
+}
+
+.car-number {
+    display: inline-block; 
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.car-number-unit {
+    display: inline-block; 
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.btn-order-now {
+    border: 3px black solid;
+    padding: 8px 33px;
+    cursor: pointer;
+    border-radius: 20px; 
+    color: black;
+}
+
+.btn-order-now:hover {
+    color: white;
+    text-decoration: none;
+    background-color: black;
+}
+
+.btn-learn-more {
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 5px 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.btn-learn-more:hover {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
+
+#line1 {
+    position: absolute;
+    z-index: 2; 
+    margin-top: 150px;
+    margin-left: 210px;
+}
+
+#line2 {
+    position: absolute;
+    z-index: 2;
+    margin-top: 120px;
+    margin-left: 380px;
+}
+
+#line3 {
+    position: absolute;
+    z-index: 2;
+    margin-top: 390px;
+    margin-left: 440px;
+}
+
+#line1-description {
+    z-index: 3;
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 230px;
+}
+
+#line2-description {
+    z-index: 3;
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 400px;
+}
+
+#line3-description {
+    z-index: 3;
+    position: absolute;
+    margin-top: 495px;
+    margin-left: 460px;
+}
+
+.video-region {
+    position: absolute;
+    z-index: 1;
+}
+
+
+
+
