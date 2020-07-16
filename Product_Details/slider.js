@@ -142,21 +142,44 @@ const WholePageSlider = class {
     if (((swipeOrClick.deltaY > 0 || swipeOrClick === 'down') && this.swipeStartDirection !== 'up') && (this.currentSection < this.sections.length - 1)) {
       this.currentSection++
       this.translate.section -= this.height
+
+      //vid autoplay
       if (this.currentSection == 2) {
+        vid.muted = true
         vid.play();
-        vid.muted;
+        vid.loop = true;
       } else {
         vid.load()
       }
+
     } else
     if (((swipeOrClick.deltaY < 0 || swipeOrClick === 'up') && this.swipeStartDirection !== 'down') && (this.currentSection > 0)) {
       this.currentSection--
       this.translate.section += this.height
+
+      if (this.currentSection == 2) {
+        vid.muted = true
+        vid.play();
+        vid.loop = true;
+      } else {
+        vid.load()
+      }
+      
     } else  
     if (swipeOrClick.type === 'click') {
       const click = parseInt(swipeOrClick.target.value) - this.currentSection
       this.currentSection = parseInt(swipeOrClick.target.value)
       this.translate.section = this.translate.section - (this.height * click)
+
+      //vid autoplay
+      if (this.currentSection == 2) {
+        vid.muted = true
+        vid.play();
+        vid.loop = true;
+      } else {
+        vid.load()
+      }
+
     } else {
       // Now, if there was any dragging, but canceled – animate back to origin.
       this.translate.section = Math.round(this.translate.section / 100) * 100
