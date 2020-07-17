@@ -17,22 +17,30 @@ function createAcc() {
     oneUserAcc["lastName"] = document.getElementById("lastName").value;
     oneUserAcc["email"] = document.getElementById("email_createAcc").value;
     oneUserAcc["password"] = document.getElementById("password_createAcc").value;
-    if (allUserAcc.length == 0) { //if allUserAcc is empty, push data 
-        allUserAcc.push(oneUserAcc);
-        sessionStorage["allUserAcc"] = JSON.stringify(allUserAcc);
-        window.location.href = "signIn.html";
-    } else { //if not empty, check with existing email
-        for (let i = 0; i < allUserAcc.length; i++) {
-            if (oneUserAcc.email == allUserAcc[i].email) {
-                same = true;
-            }
-        }
-        if (same) { //if match, then alert; if not, push into sessionStorage
-            alert("Email already existed!");
-        } else {
+    if (allUserAcc.length == 0) { //if allUserAcc is empty, push data
+        if (oneUserAcc.firstName.length != 0 && oneUserAcc.lastName.length != 0 && oneUserAcc.email.length != 0 && oneUserAcc.password.length != 0) {
             allUserAcc.push(oneUserAcc);
             sessionStorage["allUserAcc"] = JSON.stringify(allUserAcc);
             window.location.href = "signIn.html";
+        } else {
+            alert("Please provide information in every field!")
+        }
+    } else { //if not empty, check with existing email
+        if (oneUserAcc.firstName.length != 0 && oneUserAcc.lastName.length != 0 && oneUserAcc.email.length != 0 && oneUserAcc.password.length != 0) {
+            for (let i = 0; i < allUserAcc.length; i++) {
+                if (oneUserAcc.email == allUserAcc[i].email) {
+                    same = true;
+                }
+            }
+            if (same) { //if match, then alert; if not, push into sessionStorage
+                alert("Email already existed!");
+            } else {
+                allUserAcc.push(oneUserAcc);
+                sessionStorage["allUserAcc"] = JSON.stringify(allUserAcc);
+                window.location.href = "signIn.html";
+            }
+        } else {
+            alert("Please provide information in every field!")
         }
     }
 }
