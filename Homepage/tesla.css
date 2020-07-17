@@ -75,7 +75,7 @@ a {
 a:visited { text-decoration: none; }
 a:hover { text-decoration: none; }
 a:focus { text-decoration: none; }
-a:hover, a:active { text-decoration: none;background-color:;}
+a:hover, a:active { text-decoration: none;background-color:none;}
 .left{
     float: left;
 }
@@ -117,7 +117,7 @@ a:hover, a:active { text-decoration: none;background-color:;}
     text-align: center;
     outline: none;
     border-radius: 25px;
-    padding: 10px 60px;
+    padding: 1rem 1.25rem;
     line-height: 1.2;
     transition-property: background-color,font-family;
     transition-duration: 0.5s;
@@ -152,7 +152,7 @@ img{width: 100%;}
 .top{
     position: absolute;
     top: 20%;
-    left: 43.5%;
+    left: 42%;
     font-size: 50px;
     font-weight: bold;
 }

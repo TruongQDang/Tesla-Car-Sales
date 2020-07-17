@@ -13,7 +13,7 @@ function showSlides() {
     if (slideIndex> slides.length) {slideIndex = 1}    
     slides[slideIndex-1].style.display = "block";  
     //put the timeout in the timer variable
-    timer = setTimeout(showSlides, 10000); // Change image every 8 seconds
+    timer = setTimeout(showSlides, 10000); // Change image every 10 seconds
 }
 
 function plusSlides(position) {
