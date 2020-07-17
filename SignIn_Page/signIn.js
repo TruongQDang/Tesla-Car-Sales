@@ -26,6 +26,7 @@ function checkUserAcc() {
             alert("Successfully Logged In");
             notMatch = false;
             sessionStorage.loggedIn = true;
+            sessionStorage.currentUser = allUserAcc[i].firstName
             window.location.href = "../Homepage/tesla.html"
         }
     }
