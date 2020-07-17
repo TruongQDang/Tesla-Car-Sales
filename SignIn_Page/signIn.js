@@ -25,6 +25,8 @@ function checkUserAcc() {
         if (userEmail == allUserAcc[i].email && userPassword == allUserAcc[i].password) {
             alert("Successfully Logged In");
             notMatch = false;
+            sessionStorage.loggedIn = true;
+            window.location.href = "../Homepage/tesla.html"
         }
     }
     if (notMatch) {
