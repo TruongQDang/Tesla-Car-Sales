@@ -1,0 +1,42 @@
+.input-field {
+    display: inline-block;
+    width: 332px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background-color: #f4f4f4;
+    transition: border 250ms cubic-bezier(.5, .25, .25, .75);
+    padding: 10px 20px;
+}
+
+.input-field:focus {
+    border: 1px solid #d0d1d2;
+    outline: none;
+}
+
+.btn {
+    width: 332px;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.btn-sign-in {
+    color: white;
+    background-color: #3e6ae1;
+}
+
+.btn-sign-in:hover {
+    background-color: #3457b1;
+    color: white;
+}
+
+.btn-create-acc {
+    border: 2px solid black;
+}
+
+.btn-create-acc:hover {
+    background-color: black;
+    color: white;
+}
+

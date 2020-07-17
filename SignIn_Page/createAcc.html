@@ -6,28 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="layout.css">
 </head>
 
 <body>
-    <h1>Create Account</h1>
-    First Name <input type="text" id ="firstName">
-    Last Name <input type="text" id="lastName">
-    Email Address <input type="email" id="email_createAcc">
-    Password <input type="password" id ="password_createAcc">
-    <button onclick="createAcc()">Create Account</button>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="navbar">
+                <a href="../Homepage/tesla.html" class="navbar-brand">
+                    <img src="../Materials/Black Logo.png" alt="Tesla, Inc" width="100" height="10">
+                </a>
+            </div>
+        </div>
+
+        <div class="row justify-content-center" style="padding-top: 40px">
+            <h1 style="width: 684px;">Create Account</h1>
+            <div class="w-100"></div>
+
+            <div style="margin-right: 20px; margin-top: 30px;">
+                <label for="firstName" style="width: 332px; height: fit-content; padding-left: 25px;">First Name</label>
+                <div class="w-100"></div>
+                <input type="text" id ="firstName" class="input-field">
+            </div>
+
+            <div style="margin-right: 20px; margin-top: 30px;">
+                <label for="lastName" style="width: 332px; height: fit-content; padding-left: 25px;">Last Name</label>
+                <div class="w-100"></div>
+                <input type="text" id ="lastName" class="input-field">
+            </div>
+            <div class="w-100"></div>
+
+            <div style=" margin-right: 20px; margin-top: 30px">
+                <label for="email_createAcc" style="width: 332px; height: fit-content; padding-left: 25px;">Email Address</label>
+                <div class="w-100"></div>
+                <input type="email" id="email_createAcc" class="input-field">
+            </div>
+
+            <div style="margin-right: 20px; margin-top: 30px;">
+                <label for="password_createAcc" style="width: 332px; height: fit-content; padding-left: 25px;">Password</label>
+                <div class="w-100"></div>
+                <input type="password" id="password_createAcc" class="input-field">
+            </div>
+            <div class="w-100"></div>
+
+            <button type="submit" onclick="createAcc()" class="btn btn-sign-in">CREATE ACCOUNT</button>
+            <div class="w-100"></div>
+            <button onclick="directSignIn()" class="btn btn-create-acc">SIGN IN</button>
+
+
+
+        </div>    
+    
+    </div>    
 
     <script src="createAcc.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>

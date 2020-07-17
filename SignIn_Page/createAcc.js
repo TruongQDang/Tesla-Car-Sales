@@ -37,3 +37,7 @@ function createAcc() {
     }
 }
 console.log(allUserAcc)
+
+function directSignIn() {
+    window.location.href = "signIn.html"
+}

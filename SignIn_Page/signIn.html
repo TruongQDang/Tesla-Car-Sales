@@ -11,22 +11,48 @@
 </head>
 
 <body>
-    <h1>Sign In</h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="navbar">
+                <a href="../Homepage/tesla.html" class="navbar-brand">
+                    <img src="../Materials/Black Logo.png" alt="Tesla, Inc" width="100" height="10">
+                </a>
+            </div>
+        </div>
+
+        <div class="row justify-content-center" style="padding-top: 40px">
+            <h1 style="width: 332px; height: 40px;">Sign In</h1>
+            <div class="w-100"></div>
+            <div style="margin-top: 30px">
+                <label for="email" style="width: 332px; height: fit-content; padding-left: 25px;">Email Address</label>
+                <div class="w-100"></div>
+                <input type="email" id="email" class="input-field">
+            </div>
+            <div class="w-100"></div>
+
+            <div style="margin-top: 30px;">
+                <label for="password" style="width: 332px; height: fit-content; padding-left: 25px;">Password</label>
+                <div class="w-100"></div>
+                <input type="password" id="password" class="input-field">
+            </div>
+            <div class="w-100"></div>
+
+            <button type="submit" onclick="checkUserAcc()" class="btn btn-sign-in">SIGN IN</button>
+            <div class="w-100"></div>
+            <button onclick="directCreateAcc()" class="btn btn-create-acc">CREATE ACCOUNT</button>
+        </div>
+
+    </div>
+
+
+
+    <!-- <h1>Sign In</h1>
     Email<input type="email" id="email">
     Password<input type="password" id="password">
     <button type="submit" onclick="checkUserAcc()">SIGN IN</button>
-    <button onclick="directCreateAcc()">CREATE ACCOUNT</button>
+    <button onclick="directCreateAcc()">CREATE ACCOUNT</button> -->
 
     <script src="signIn.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>
